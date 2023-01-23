@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>leason10</title>
+    <style>
+      form {
+        width: 350px;
+        background-color: black;
+        opacity: 1;
+        position: relative;
+        transition: 3s;
+        margin: 0 auto;
+        border-radius: 3%;
+        display: inline-flex;
+        flex-direction: column;
+        z-index: 1;
+        padding: 0 1.5% 1.5% 1.5%;
+        gap: 8px 0;
+      }
+      h1 {
+        color: white;
+        margin-bottom: 70px;
+        font-size: 50px;
+      }
+      #pass2 {
+        margin-bottom: 30px;
+      }
+      input {
+        color: white;
+        background-color: rgb(0, 0, 0, 0);
+        border: 2px solid violet;
+        border-radius: 8px;
+        padding: 10px;
+      }
+      input:focus {
+        border: 4px solid rgb(201, 62, 201);
+      }
+      #btnReg {
+        color: white;
+        background-color: rgb(134, 61, 230);
+        border: 0;
+        border-radius: 8px;
+        padding: 10px;
+        transition: 0.9s;
+        cursor: pointer;
+      }
+      #btnReg:hover {
+        background-color: #bc8be9;
+        transform: translateX(2em);
+      }
+      #btn2 {
+        color: white;
+        background-color: rgb(134, 61, 230);
+        border: 0;
+        border-radius: 8px;
+        padding: 10px;
+        transition: 0.9s;
+        cursor: pointer;
+      }
+      #btn2:hover {
+        background-color: #bc8be9;
+        transform: translateX(2em);
+      }
+      @keyframes anime {
+        0% {
+          transform: translate(3px);
+        }
+        100% {
+          transform: translate(-3px);
+        }
+      }
+      fieldset {
+        display: inline-flex;
+        background-color: aliceblue;
+        position: absolute;
+        left: 42%;
+        top: 40%;
+        opacity: 0;
+        transition: 6s;
+      }
+      legend {
+        font-size: 40px;
+        background-color: darkgray;
+        border-radius: 8px;
+        color: darkslategrey;
+      }
+    </style>
+  </head>
+  <body style="background-color: grey; margin: 10% auto; text-align: center">
+    <form>
+      <h1>Register</h1>
+      <input id="name" type="text" placeholder="Full name" />
+
+      <input id="mail" type="email" placeholder="E-mail" />
+      <input id="phone" type="phone" placeholder="Phone" />
+      <input id="pass" type="password" placeholder="Password" />
+      <input
+        id="pass2"
+        type="password"
+        placeholder="Confirm Password"
+        value=""
+      />
+      <input id="btnReg" type="button" value="Register" />
+      <input id="btn2" type="button" value="Have account?Sign in" />
+      <!-- <button type="submit" class="btn1">Register</button>
+      <button class="btn2">Have account?Sign in</button> -->
+    </form>
+    <fieldset>
+      <legend>ВіТАЄМО</legend>
+      <p>реєсстрація пройшла успішно</p>
+    </fieldset>
+    <script src="js/registerScript.js"></script>
+  </body>
+</html>
